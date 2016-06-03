@@ -1,10 +1,12 @@
 .header img {
   max-width: 90px;
+  display: inline;
 }
 
 .header h1 {
   font-family: "Satisfy", cursive;
   color: #f48059;
+  display: inline;
 }
 .jumbotron {
   background-image: url('../img/hero.jpg');
@@ -70,4 +72,18 @@ footer .border {
 footer .copyright {
   color: #505050;
   font-size: 18px;
+}
+
+.map {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
